@@ -31,30 +31,24 @@ const hideImg = document.getElementsByClassName('item')
 console.log(hideImg);
 
 hideImg[imgCounter].classList.remove('hide')
-buttonUp.classList.add('hide')
+
 
 // 5. Creare i bottoni così da poter triggerare l'azione del counter.
 buttonDown.addEventListener('click', function(){
   hideImg[imgCounter].classList.add('hide')
   imgCounter++
   hideImg[imgCounter].classList.remove('hide')
-  buttonUp.classList.remove('hide')
-  if (imgCounter === img.length - 1){
-    buttonDown.classList.add('hide')
-  }
+  
 })
 
 buttonUp.addEventListener('click', function(){
   hideImg[imgCounter].classList.add('hide')
   imgCounter--
   hideImg[imgCounter].classList.remove('hide')
-
-  if (imgCounter === img.length - 2) {
-    buttonDown.classList.remove('hide')
-  } else if (imgCounter === 0) {
-    buttonUp.classList.add('hide')
-  }
 })
+
+
+
 
 
 
