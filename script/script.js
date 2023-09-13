@@ -44,5 +44,18 @@ buttonDown.addEventListener('click', function(){
   }
 })
 
+buttonUp.addEventListener('click', function(){
+  hideImg[imgCounter].classList.add('hide')
+  imgCounter--
+  hideImg[imgCounter].classList.remove('hide')
+
+  if (imgCounter === img.length - 2) {
+    buttonDown.classList.remove('hide')
+  } else if (imgCounter === 0) {
+    buttonUp.classList.add('hide')
+  }
+})
+
+
 
 
