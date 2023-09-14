@@ -24,7 +24,7 @@ for(let i = 0; i<img.length; i++){
   const image = img[i]
   console.log(image);
   imgWrapper.innerHTML += `<img src=${image} class="hide item">`
-  thumbWrapper.innerHTML += ` <div class="thumb-img item-mini"><img src=${image} alt=""></div>`
+  thumbWrapper.innerHTML += `<img src="${image}" alt="" class="item-mini">`
   console.log(imgWrapper)
 }
 

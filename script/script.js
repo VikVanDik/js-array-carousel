@@ -37,6 +37,7 @@ buttonUp.classList.add('hide')
 buttonDown.addEventListener('click', function(){
   hideImg[imgCounter].classList.add('hide')
   imgCounter++
+  console.log(hideImg[imgCounter])
   hideImg[imgCounter].classList.remove('hide')
   buttonUp.classList.remove('hide')
   if (imgCounter === img.length - 1){
